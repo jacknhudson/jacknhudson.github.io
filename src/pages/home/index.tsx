@@ -42,7 +42,11 @@ export default function Home() {
           <Container maxWidth="md">
             <Grid container>
               <Grid item md={6} sm={12} className={classes.photoWrapper}>
-                <img className={classes.jack} alt="Jack Hudson" src="/img/background.jpg" />
+                <img
+                  className={classes.jack}
+                  alt="Jack Hudson"
+                  src="https://raw.githubusercontent.com/jacknhudson/jacknhudson.github.io/master/img/background.jpg"
+                />
               </Grid>
               <Grid item md={6} sm={12}>
                 <Grid className={classes.descriptionWrapper}>

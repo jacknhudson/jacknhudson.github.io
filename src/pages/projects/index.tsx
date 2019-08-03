@@ -134,7 +134,11 @@ const Project = ({ project }: ProjectProps) => {
           : classnames(classes.project, classes.enabled)
       }
     >
-      <img src={`/img/logos/${project.logo}`} alt={project.id} className={classes.projectLogo} />
+      <img
+        src={`https://raw.githubusercontent.com/jacknhudson/jacknhudson.github.io/master/img/logos/${project.logo}`}
+        alt={project.id}
+        className={classes.projectLogo}
+      />
       <CardContent className={classes.projectBlurb}>
         <Typography gutterBottom variant="h5" component="h2">
           {project.id}
