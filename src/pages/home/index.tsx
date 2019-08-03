@@ -45,7 +45,7 @@ export default function Home() {
                 <img
                   className={classes.jack}
                   alt="Jack Hudson"
-                  src="https://raw.githubusercontent.com/jacknhudson/jacknhudson.github.io/master/img/background.jpg"
+                  src="https://raw.githubusercontent.com/jacknhudson/jacknhudson.github.io/master/img/background-opt.jp2"
                 />
               </Grid>
               <Grid item md={6} sm={12}>
