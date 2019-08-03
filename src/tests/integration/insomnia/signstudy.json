@@ -1,0 +1,219 @@
+{
+	"_type": "export",
+	"__export_format": 4,
+	"__export_date": "2019-07-15T15:23:43.254Z",
+	"__export_source": "insomnia.desktop.app:v6.5.4",
+	"resources": [
+		{
+			"_id": "req_7095388287b944bc855349fe17917910",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/graphql",
+				"text": "{\"query\":\" mutation($terms:[String]!, $defaultTerm: String!, $source: String!){\\n  addSign(\\n    terms: $terms,\\n    defaultTerm: $defaultTerm,\\n    source: $source\\n  ) {\\n    updatedAt\\n    createdAt\\n    id\\n  }\\n}\",\"variables\":{\"terms\":[\"term1\",\"term2\"],\"defaultTerm\":\"default\",\"source\":\"https://www.youtube.com/watch?v=jNgP6d9HraI\"}}"
+			},
+			"created": 1563127979815,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_adc4f6e0462544919c93bf130a4902c7",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1563127979815,
+			"method": "POST",
+			"modified": 1563133829336,
+			"name": "addSign",
+			"parameters": [],
+			"parentId": "fld_2cd63e85a7d84c8cbe805405c1c70055",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}",
+			"_type": "request"
+		},
+		{
+			"_id": "fld_2cd63e85a7d84c8cbe805405c1c70055",
+			"created": 1563126516094,
+			"description": "",
+			"environment": {},
+			"environmentPropertyOrder": null,
+			"metaSortKey": -1563126516094,
+			"modified": 1563126516094,
+			"name": "signs",
+			"parentId": "wrk_c60effe2a5bb44138749c97de15579f0",
+			"_type": "request_group"
+		},
+		{
+			"_id": "wrk_c60effe2a5bb44138749c97de15579f0",
+			"created": 1563126476469,
+			"description": "",
+			"modified": 1563126476469,
+			"name": "signstudy",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "req_43270c44b9af4119a42b6791fe1f27e7",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/graphql",
+				"text": "{\"query\":\" mutation($id: Int!, $terms:[String]!, $defaultTerm: String!, $source: String!){\\n  updateSign(\\n    id: $id,\\n    terms: $terms,\\n    defaultTerm: $defaultTerm,\\n    source: $source\\n  ) {\\n    updatedAt\\n    createdAt\\n    id\\n  }\\n}\",\"variables\":{\"id\":16,\"terms\":[\"term1\",\"term2\"],\"defaultTerm\":\"default\",\"source\":\"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4\"}}"
+			},
+			"created": 1563130685511,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_adc4f6e0462544919c93bf130a4902c7",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1563127741960.25,
+			"method": "POST",
+			"modified": 1563171943320,
+			"name": "updateSign",
+			"parameters": [],
+			"parentId": "fld_2cd63e85a7d84c8cbe805405c1c70055",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}",
+			"_type": "request"
+		},
+		{
+			"_id": "req_eb93a227cf8d4e6b925452cc62cc3fc1",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/graphql",
+				"text": "{\"query\":\" mutation($signId:Int!){\\n  removeSign(\\n    id: $signId\\n  ) {\\n    updatedAt\\n  }\\n}\",\"variables\":{\"signId\":17}}"
+			},
+			"created": 1563130309586,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_adc4f6e0462544919c93bf130a4902c7",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1563127504105.5,
+			"method": "POST",
+			"modified": 1563203984096,
+			"name": "removeSign",
+			"parameters": [],
+			"parentId": "fld_2cd63e85a7d84c8cbe805405c1c70055",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}",
+			"_type": "request"
+		},
+		{
+			"_id": "req_fe369764a0b6492baa7efa8f9abe2388",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/graphql",
+				"text": "{\"query\":\"query{\\n  signs {\\n    id\\n    source\\n  }\\n}\\n\"}"
+			},
+			"created": 1563127028396,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_37f5de7ad0474cfda51d17b76d140df9",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1563127028396,
+			"method": "GET",
+			"modified": 1563203981527,
+			"name": "signs",
+			"parameters": [],
+			"parentId": "fld_2cd63e85a7d84c8cbe805405c1c70055",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}",
+			"_type": "request"
+		},
+		{
+			"_id": "req_848d63f488904827a5235d182d4f5697",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/graphql",
+				"text": "{\"query\":\"query($signId: Int!){\\n  sign(id: $signId) {\\n    id\\n    source\\n    defaultTerm\\n\\t\\tterms\\n  }\\n}\",\"variables\":{\"signId\":0}}"
+			},
+			"created": 1563126523190,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_00dbb889a88042d6bf9892ae10779da1",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1563126523190,
+			"method": "GET",
+			"modified": 1563166572007,
+			"name": "sign",
+			"parameters": [],
+			"parentId": "fld_2cd63e85a7d84c8cbe805405c1c70055",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}",
+			"_type": "request"
+		},
+		{
+			"_id": "env_b3fcf11289d306c625c12813b7a7c58b77a5c5dc",
+			"color": null,
+			"created": 1563126476491,
+			"data": { "base_url": "http://localhost:5000/graphql" },
+			"dataPropertyOrder": { "&": ["base_url"] },
+			"isPrivate": false,
+			"metaSortKey": 1563126476491,
+			"modified": 1563127876777,
+			"name": "Base Environment",
+			"parentId": "wrk_c60effe2a5bb44138749c97de15579f0",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_b3fcf11289d306c625c12813b7a7c58b77a5c5dc",
+			"cookies": [],
+			"created": 1563126476498,
+			"modified": 1563126476498,
+			"name": "Default Jar",
+			"parentId": "wrk_c60effe2a5bb44138749c97de15579f0",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "env_a8d92a8b1b3544a5b7d00dc58e478ccf",
+			"color": null,
+			"created": 1563127074420,
+			"data": { "base_url": "http://localhost:5000/graphql" },
+			"dataPropertyOrder": { "&": ["base_url"] },
+			"isPrivate": false,
+			"metaSortKey": 1563127074420,
+			"modified": 1563127100945,
+			"name": "Development",
+			"parentId": "env_b3fcf11289d306c625c12813b7a7c58b77a5c5dc",
+			"_type": "environment"
+		}
+	]
+}
