@@ -26,8 +26,13 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "lint": "eslint --fix . --ext .js,.ts,.tsx"
+    "deploy": "npm run update-build && gh-pages -d build -b master",
+    "lint": "eslint --fix . --ext .js,.ts,.tsx",
+    "update-build": "npm run copy-robots && npm run copy-gitignore && npm run copy-sitemap && npm run copy-cname",
+    "copy-robots": "cp robots.txt build/robots.txt",
+    "copy-gitignore": "cp .gitignore build/.gitignore",
+    "copy-sitemap": "cp sitemap.xml build/sitemap.xml",
+    "copy-cname": "cp CNAME build/CNAME"
   },
   "eslintConfig": {
     "extends": "react-app"
