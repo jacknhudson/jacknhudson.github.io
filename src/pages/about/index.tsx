@@ -21,6 +21,9 @@ export default function Projects() {
           color="textPrimary"
           className={classes.title}
         >
+          about
+        </Typography>
+        <Typography component="h2" variant="subtitle1" align="center" color="textSecondary">
           in progress...
         </Typography>
       </main>
