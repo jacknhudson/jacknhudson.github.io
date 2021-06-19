@@ -77,7 +77,7 @@ export default function Home() {
                       className={classes.subDescription}
                     >
                       i enjoy creating effective solutions to critical problems. i&apos;m currently
-                      building the future of public safety
+                      building the future of public safety{' '}
                       <a className="MuiTypography-colorPrimary" href="https://www.axon.com">
                         @axon
                       </a>
