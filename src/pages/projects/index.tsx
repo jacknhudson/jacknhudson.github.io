@@ -135,7 +135,7 @@ const Project = ({ project }: ProjectProps) => {
       }
     >
       <img
-        src={`https://raw.githubusercontent.com/jacknhudson/jacknhudson.github.io/master/img/logos/${project.logo}`}
+        src={process.env.PUBLIC_URL + `img/logos/${project.logo}`}
         alt={project.id}
         className={classes.projectLogo}
       />

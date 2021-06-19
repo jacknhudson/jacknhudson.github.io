@@ -104,7 +104,7 @@ export default function ButtonAppBar() {
             <MenuIcon />
           </IconButton>
           <span className={classes.navOptions}>
-            <NavButton to="/about">about</NavButton>
+            <NavButton to="/about-me">about me</NavButton>
             <NavButton to="/projects">projects</NavButton>
           </span>
         </Toolbar>

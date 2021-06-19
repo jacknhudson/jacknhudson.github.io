@@ -13,6 +13,14 @@ const THEME = createMuiTheme({
     fontWeightRegular: 400,
     fontWeightMedium: 500,
   },
+  palette: {
+    secondary: {
+      // light: will be calculated from palette.secondary.main,
+      main: '#eceff1',
+      // dark: will be calculated from palette.secondary.main,
+      contrastText: '#444',
+    },
+  },
 })
 
 function App() {
@@ -22,7 +30,7 @@ function App() {
         <Nav />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
+          <Route exact path="/about-me" component={About} />
           <Route exact path="/projects" component={Projects} />
           <Route render={() => <Redirect to="/" />} />
         </Switch>
