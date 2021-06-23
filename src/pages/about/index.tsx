@@ -25,11 +25,12 @@ const useStyles = makeStyles(theme => ({
   photoWrapper: {
     margin: 'auto',
   },
-  jack: {
-    padding: theme.spacing(3),
+  img: {
     width: '100%',
-    borderRadius: '60px',
-    maxWidth: '350px',
+    borderRadius: '15px',
+    maxWidth: '300px',
+    marginTop: theme.spacing(3),
+    marginBottom: theme.spacing(3),
     display: 'block',
     margin: 'auto',
   },
@@ -64,7 +65,7 @@ function Detail({ title, subtitle, details, image }) {
   return (
     <Grid container>
       <Grid item md={5} sm={12} className={classes.photoWrapper}>
-        <img className={classes.jack} alt={image.alt} src={process.env.PUBLIC_URL + image.src} />
+        <img className={classes.img} alt={image.alt} src={process.env.PUBLIC_URL + image.src} />
       </Grid>
       <Grid item md={7} sm={12}>
         <Grid className={classes.descriptionWrapper}>

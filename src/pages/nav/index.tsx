@@ -116,8 +116,8 @@ export default function ButtonAppBar() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <Link to="/about">
-          <MenuItem onClick={handleClose}>about</MenuItem>
+        <Link to="/about-me">
+          <MenuItem onClick={handleClose}>about me</MenuItem>
         </Link>
         <Link to="/projects">
           <MenuItem onClick={handleClose}>projects</MenuItem>
