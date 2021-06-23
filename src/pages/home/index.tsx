@@ -11,10 +11,11 @@ const useStyles = makeStyles(theme => ({
     margin: 'auto',
   },
   jack: {
-    padding: theme.spacing(3),
+    marginTop: theme.spacing(1),
+    marginBottom: theme.spacing(3),
     width: '80%',
-    borderRadius: '40px',
-    maxWidth: '300px',
+    borderRadius: '900px',
+    maxWidth: '200px',
     display: 'block',
     margin: 'auto',
   },
@@ -54,7 +55,7 @@ export default function Home() {
                 <img
                   className={classes.jack}
                   alt="Jack Hudson"
-                  src={process.env.PUBLIC_URL + '/img/background-opt.jpg'}
+                  src={process.env.PUBLIC_URL + '/img/jack-square.jpg'}
                 />
               </Grid>
               <Grid item md={7} sm={12}>

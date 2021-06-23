@@ -148,7 +148,7 @@ export default function Projects() {
       details:
         'enjoying a variety of adventures on the west coast, including canadian island hopping, rafting, skiing, bouldering, hiking, and tackling the most critical challenges that come my way.',
       image: {
-        src: '/img/about/seattle.jpg',
+        src: '/img/about/olympic.jpg',
         alt: 'Jack Hudson',
       },
     },
