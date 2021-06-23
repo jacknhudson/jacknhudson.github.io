@@ -46,16 +46,16 @@ const useStyles = makeStyles(theme => ({
     color: '#444',
   },
   detailsTitle: {
-    fontSize: '1.3rem',
+    fontSize: '1.25rem',
     marginBottom: 0,
     marginTop: 20,
   },
   detailsYear: {
-    fontSize: '1.1rem',
+    fontSize: '1rem',
     marginBottom: 10,
   },
   detailsDescription: {
-    fontSize: '1.1rem',
+    fontSize: '1rem',
   },
 }))
 
@@ -75,9 +75,12 @@ function Detail({ title, subtitle, details, image }) {
             <Typography color="textSecondary" paragraph className={classes.detailsYear}>
               {subtitle}
             </Typography>
-            <Typography color="textPrimary" paragraph className={classes.detailsDescription}>
-              {details}
-            </Typography>
+            <Typography
+              color="textPrimary"
+              paragraph
+              className={classes.detailsDescription}
+              dangerouslySetInnerHTML={{ __html: details }}
+            ></Typography>
           </Grid>
         </Grid>
       </Grid>
@@ -89,8 +92,8 @@ export default function Projects() {
   const classes = useStyles()
   const details = [
     {
-      title: 'shakespeare (0 - 5)',
-      subtitle: 'aberdeen, scotland',
+      title: 'scotland',
+      subtitle: '1994',
       details:
         'born in aberdeen to the two most loving parents, I spent much of my childhood creating literary masterpieces like "Tarzan 2" and directing world-class performances at home with my siblings.',
       image: {
@@ -99,32 +102,52 @@ export default function Projects() {
       },
     },
     {
-      title: 'woody (5)',
-      subtitle: 'houston, texas',
+      title: 'america, part one',
+      subtitle: '5 years old · 1999',
       details:
-        'hung out with airplane pilots on my 5th birthday, as we flew to the US. enjoyed a several month layover in the woodlands while learning the american way of baseball and basketball.',
+        'hung out with airplane pilots on my 5th birthday, as we flew to the US. enjoyed a several month layover in the woodlands while learning the american ways of baseball and basketball.',
       image: {
         src: '/img/about/pool.jpg',
         alt: 'Jack Hudson',
       },
     },
     {
-      title: 'islander (5 - 8)',
-      subtitle: 'manila, philippines',
+      title: 'philippines',
+      subtitle: '5 (and a half!) years old · 1999',
       details:
-        'hung onto my british accent for a few more years while attending british school in manila. some of my favorite memories are from family vacations: island hopping around fillipino resorts, japan, and australia.',
+        'kept my british accent for a few more years while attending british school in manila. some of my favorite memories are from family vacations: island hopping around fillipino resorts (renting an island for a day), japan, and australia.',
       image: {
         src: '/img/about/jetski.jpg',
         alt: 'Jack Hudson',
       },
     },
     {
-      title: 'highlander (8+)',
-      subtitle: 'houston, texas',
+      title: 'america, part two',
+      subtitle: '8 years old · 2002',
       details:
-        'attempted to fend off bbq and tex-mex by picking up taekwondo. incredibly humbled by travelling the world - exploring over 30 countries, much thanks to fencing and family. to be continued..',
+        'fought off bbq and tex-mex by picking up taekwondo. incredibly humbled to have the opportunity to travel the world - exploring over 30 countries, much thanks to fencing and family.',
       image: {
         src: '/img/about/alexei.jpg',
+        alt: 'Jack Hudson',
+      },
+    },
+    {
+      title: 'princeton',
+      subtitle: '18 years old · 2012',
+      details:
+        'the first day of college, my roommates and I made a pact to run together each morning. guess how long that lasted.. instead, I went on to start a company with two friends, medal at NCAAs, and become a <a style="color:#00527e" href="https://thetab.com/us/princeton/2015/10/28/cos-major-invents-late-meal-sandwich-and-immediately-becomes-a-legend-617" target="_blank">sandwich legend</a>.',
+      image: {
+        src: '/img/about/signschool.jpg',
+        alt: 'Jack Hudson',
+      },
+    },
+    {
+      title: 'seattle',
+      subtitle: '24 years old · 2018',
+      details:
+        'enjoying a variety of adventures on the west coast, including canadian island hopping, rafting, skiing, bouldering, hiking, and tackling the most critical challenges that come my way.',
+      image: {
+        src: '/img/about/seattle.jpg',
         alt: 'Jack Hudson',
       },
     },
