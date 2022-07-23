@@ -99,7 +99,7 @@ export default function Projects() {
         'born in aberdeen to the two most loving parents, I spent much of my childhood creating literary masterpieces like "Tarzan 2" and directing world-class performances at home with my siblings.',
       image: {
         src: '/img/about/garden.jpg',
-        alt: 'Jack Hudson',
+        alt: 'Family garden photo',
       },
     },
     {
@@ -109,17 +109,17 @@ export default function Projects() {
         'hung out with airplane pilots on my 5th birthday, as we flew to the US. enjoyed a several month layover in the woodlands while learning the american ways of baseball and basketball.',
       image: {
         src: '/img/about/pool.jpg',
-        alt: 'Jack Hudson',
+        alt: 'Swimming with grandparents',
       },
     },
     {
       title: 'philippines',
       subtitle: '5 (and a half!) years old · 1999',
       details:
-        'kept my british accent for a few more years while attending british school in manila. some of my favorite memories are from family vacations: island hopping around fillipino resorts (renting an island for a day), japan, and australia.',
+        'kept my british accent for a few more years while attending british school in manila. some of my favorite memories are from family vacations: island-hopping around fillipino resorts (renting an island for a day), japan, and australia.',
       image: {
         src: '/img/about/jetski.jpg',
-        alt: 'Jack Hudson',
+        alt: 'Jet skiing with siblings',
       },
     },
     {
@@ -129,7 +129,7 @@ export default function Projects() {
         'fought off bbq and tex-mex by picking up taekwondo. incredibly humbled to have the opportunity to travel the world - exploring over 30 countries, much thanks to fencing and family.',
       image: {
         src: '/img/about/alexei.jpg',
-        alt: 'Jack Hudson',
+        alt: 'Fencing',
       },
     },
     {
@@ -139,17 +139,17 @@ export default function Projects() {
         'the first day of college, my roommates and I made a pact to run together each morning. guess how long that lasted.. instead, I went on to start a company with two friends, medal at NCAAs, and become a <a style="color:#00527e" href="https://thetab.com/us/princeton/2015/10/28/cos-major-invents-late-meal-sandwich-and-immediately-becomes-a-legend-617" target="_blank">sandwich legend</a>.',
       image: {
         src: '/img/about/signschool.jpg',
-        alt: 'Jack Hudson',
+        alt: 'Starting SignSchool',
       },
     },
     {
       title: 'seattle',
       subtitle: '24 years old · 2018',
       details:
-        'enjoying a variety of adventures on the west coast, including canadian island hopping, rafting, skiing, bouldering, hiking, and tackling the most critical challenges that come my way.',
+        'enjoying a variety of adventures on the west coast, including canadian island-hopping, rafting, skiing, bouldering, hiking, and tackling the most critical challenges that come my way.',
       image: {
         src: '/img/about/olympic.jpg',
-        alt: 'Jack Hudson',
+        alt: 'Appreciating the olympics',
       },
     },
   ]

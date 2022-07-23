@@ -13,16 +13,16 @@ const useStyles = makeStyles(theme => ({
   jack: {
     marginTop: theme.spacing(1),
     marginBottom: theme.spacing(3),
-    width: '80%',
+    width: '90%',
     borderRadius: '900px',
-    maxWidth: '200px',
+    maxWidth: '240px',
     display: 'block',
     margin: 'auto',
   },
   descriptionWrapper: {
     display: 'table',
     height: '100%',
-    maxWidth: '80%',
+    maxWidth: '90%',
     margin: 'auto',
   },
   description: {
@@ -30,12 +30,15 @@ const useStyles = makeStyles(theme => ({
     verticalAlign: 'middle',
     textAlign: 'center',
   },
-  subDescription: {
-    fontSize: '1.27rem',
+  title: {
+    fontSize: '2.5rem',
   },
-  linkedInButton: {
-    width: '130px',
-    margin: '3px',
+  subDescription: {
+    fontSize: '1.3rem',
+  },
+  homeButton: {
+    width: '170px',
+    margin: '10px',
     marginRight: '10px',
     marginLeft: '10px',
     textAlign: 'center',
@@ -63,31 +66,32 @@ export default function Home() {
                   <Grid className={classes.description}>
                     <Typography
                       component="h1"
-                      variant="h4"
+                      variant="h3"
                       align="center"
                       color="textPrimary"
+                      className={classes.title}
                       gutterBottom
                     >
                       hi, i&apos;m jack.
                     </Typography>
                     <Typography
-                      variant="h5"
+                      variant="h4"
                       align="center"
                       color="textSecondary"
                       paragraph
                       className={classes.subDescription}
                     >
                       i enjoy creating effective solutions to critical problems. i&apos;m currently
-                      building the future of public safety{' '}
-                      <a className="MuiTypography-colorPrimary" href="https://www.axon.com">
-                        @axon
+                      building the future of global finance{' '}
+                      <a className="MuiTypography-colorPrimary" href="https://www.swan.com" target="_blank">
+                        @swan
                       </a>
                       .
                     </Typography>
                     <Link to="about-me">
                       <Button
                         variant="contained"
-                        className={classes.linkedInButton}
+                        className={classes.homeButton}
                         color="primary"
                       >
                         about me
@@ -96,7 +100,7 @@ export default function Home() {
                     <Link to="projects">
                       <Button
                         variant="contained"
-                        className={classes.linkedInButton}
+                        className={classes.homeButton}
                         color="secondary"
                       >
                         projects
