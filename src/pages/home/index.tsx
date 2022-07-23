@@ -83,7 +83,7 @@ export default function Home() {
                     >
                       i enjoy creating effective solutions to critical problems. i&apos;m currently
                       building the future of global finance{' '}
-                      <a className="MuiTypography-colorPrimary" href="https://www.swan.com" target="_blank">
+                      <a className="MuiTypography-colorPrimary" href="https://www.swan.com" target="_blank" rel="noreferrer">
                         @swan
                       </a>
                       .
