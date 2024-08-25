@@ -146,10 +146,20 @@ export default function Projects() {
       title: 'seattle',
       subtitle: '24 years old · 2018',
       details:
-        'enjoying a variety of adventures on the west coast, including canadian island-hopping, rafting, skiing, bouldering, hiking, and tackling the most critical challenges that come my way.',
+        'enjoyed a variety of adventures on the west coast, including Canadian island-hopping, white water rafting through Big Bend, skiing, bouldering, hiking, and escaping the epicenter of COVID-19.',
       image: {
         src: '/img/about/olympic.jpg',
         alt: 'Appreciating the olympics',
+      },
+    },
+    {
+      title: 'austin',
+      subtitle: '28 years old · 2022',
+      details:
+        'found my favorite city and my favorite person. balancing life as master chef <a style="color:#00527e" href="https://www.instagram.com/__dessertfirst/" target="_blank">@dessertfirst</a>, stein hoisting champion, & head handyman at the house. in my free time, narrowly surviving Tahiti shark dives, Texas hikes, & Paris wine tours.',
+      image: {
+        src: '/img/about/scuba.jpg',
+        alt: 'Scuba diving in Tahiti',
       },
     },
   ]
