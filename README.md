@@ -11,6 +11,9 @@ User github pages are deployed from master, so the code is in the `code` branch.
 Go to `code` branch, and run:
 
 ```bash
+# possible pre-start step
+export NODE_OPTIONS=--openssl-legacy-provider
+
 # just for initial setup, install packages
 yarn install
 
