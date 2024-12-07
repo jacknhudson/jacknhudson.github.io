@@ -19,4 +19,6 @@ yarn install
 
 # start the web app
 yarn start
+
+# Note: You may need to sign into Github, if so - use a personal access token rather than your password
 ```
