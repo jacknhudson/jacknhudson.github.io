@@ -61,15 +61,29 @@ const projects = [
     link: 'https://www.signstudy.org',
   },
   {
+    id: 'blocksocean',
+    logo: 'blocksocean.jpg',
+    description: 'x bot for tracking ocean mining pool blocks',
+    link: 'https://x.com/blocksocean',
+  },
+  {
     id: 'eyewire museum',
     logo: 'eyewire.jpg',
     description: 'open-source repository for connectomic neurons',
     link: 'http://museum.eyewire.org',
   },
   {
+    id: 'scratchwork',
+    logo: 'scratchwork.svg',
+    description: 'education tablet and document annotation tool',
+    link: 'https://www.scratchwork.io',
+  },
+  {
     id: 'jumpstart',
     logo: 'jumpstart.png',
     description: 'crowdsourcing platform for clean energy projects',
+    link:
+      'https://www.fastcompany.com/90255483/this-new-site-makes-it-easy-to-put-your-money-into-clean-energy-investments',
   },
   {
     id: 'bitbot',
@@ -90,11 +104,6 @@ const projects = [
     id: 'colab',
     logo: 'colab.png',
     description: 'open-source research collaboration platform',
-  },
-  {
-    id: 'scriblet',
-    logo: 'scriblet.png',
-    description: 'education tablet and document annotation tool',
   },
   {
     id: 'ponder',
