@@ -61,10 +61,10 @@ const projects = [
     link: 'https://www.signstudy.org',
   },
   {
-    id: 'blocksocean',
+    id: 'ocean_blocks',
     logo: 'blocksocean.jpg',
     description: 'x bot for tracking ocean mining pool blocks',
-    link: 'https://x.com/blocksocean',
+    link: 'https://x.com/ocean_blocks',
   },
   {
     id: 'eyewire museum',
