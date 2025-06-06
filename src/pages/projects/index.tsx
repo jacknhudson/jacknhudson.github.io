@@ -49,6 +49,12 @@ const useStyles = makeStyles(theme => ({
 
 const projects = [
   {
+    id: 'openagentic',
+    logo: 'openagentic.png',
+    description: 'open-source agentic orchestration platform',
+    link: 'https://openagentic.org',
+  },
+  {
     id: 'signschool',
     logo: 'signschool.png',
     description: 'online learning platform for american sign language',
@@ -65,6 +71,12 @@ const projects = [
     logo: 'blocksocean.jpg',
     description: 'x bot for tracking ocean mining pool blocks',
     link: 'https://x.com/ocean_blocks',
+  },
+  {
+    id: 'sparkx',
+    logo: 'sparkx.png',
+    description: 'peer-to-peer payments platform for BTC + USD',
+    link: 'https://sparkx-kappa.vercel.app',
   },
   {
     id: 'eyewire museum',
