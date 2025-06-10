@@ -55,6 +55,12 @@ const projects = [
     link: 'https://openagentic.org',
   },
   {
+    id: 'bitcoinui',
+    logo: 'bitcoinui.png',
+    description: 'accessible bitcoin ui component library',
+    link: 'https://bitcoinui.org',
+  },
+  {
     id: 'signschool',
     logo: 'signschool.png',
     description: 'online learning platform for american sign language',
