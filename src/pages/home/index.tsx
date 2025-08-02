@@ -82,27 +82,24 @@ export default function Home() {
                       className={classes.subDescription}
                     >
                       i enjoy creating effective solutions to critical problems. i&apos;m currently
-                      building the future of global finance{' '}
-                      <a className="MuiTypography-colorPrimary" href="https://onrampbitcoin.com/" target="_blank" rel="noreferrer">
-                        @onramp
+                      building the future of sustainability and automation{' '}
+                      <a
+                        className="MuiTypography-colorPrimary"
+                        href="https://tesla.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        @tesla
                       </a>
                       .
                     </Typography>
                     <Link to="about-me">
-                      <Button
-                        variant="contained"
-                        className={classes.homeButton}
-                        color="primary"
-                      >
+                      <Button variant="contained" className={classes.homeButton} color="primary">
                         about me
                       </Button>
                     </Link>
                     <Link to="projects">
-                      <Button
-                        variant="contained"
-                        className={classes.homeButton}
-                        color="secondary"
-                      >
+                      <Button variant="contained" className={classes.homeButton} color="secondary">
                         projects
                       </Button>
                     </Link>
